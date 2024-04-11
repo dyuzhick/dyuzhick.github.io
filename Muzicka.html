@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./normalize.css">
+<link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+
+<header>
+  <h2 class="text">Весна в искусстве</h2>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="Vivaldi.html">Главная</a></li>
+    <li><a href="Stihi.html">Стихи</a></li>
+    <li><a href="Kartini.html">Картины</a></li>
+    <li><a href="Muzicka.html">Музыка</a></li>
+  </ul>
+</nav>
+
+<h3 class="section-heading">Музыка</h3>
+
+<div>
+    <p>Николай Николаевич Рыбников</p>
+    <img src="./pictures/nikolay-ribnikov-700x700.jpg.webp">
+    <div>
+        <button class="music-btn" onclick="playChaiSound()">Воспроизвести музыку (Рыбников)</button>
+        <button class="music-btn" onclick="stopSound()">Остановить музыку</button>
+     </div>
+  
+     <!-- Аудиофайлы -->
+     <audio id="audioChai" src="./music/Nikolajj_Rybnikov_-_Na_Zarechnojj_ulice_56310704.mp3"></audio>
+     <audio id="audioViv" src="./music/П И Чайковский  Весна (256  kbps).mp3"></audio>
+  
+     <!-- JavaScript код -->
+     <script>
+       var audioChai = document.getElementById("audioChai");
+       var audioViv = document.getElementById("audioViv");
+  
+       function playChaiSound() {
+         audioChai.play();
+       }
+  
+       function playVivSound() {
+         audioViv.play();
+       }
+  
+       function stopSound() {
+         audioChai.pause();
+         audioViv.pause();
+         audioChai.currentTime = 0;
+         audioViv.currentTime = 0;
+       }
+     </script>
+     <img src="./pictures/Tchaikovsky-3.jpg">
+     <div>
+      <button class="music-btn" onclick="playVivSound()">Воспроизвести музыку (Чайковский)</button>
+      <button class="music-btn" onclick="stopSound()">Остановить музыку</button>
+   </div>
+</div>

@@ -1,0 +1,51 @@
+body {
+  font-family: 'Roboto Black', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.text {
+  margin: 0;
+}
+
+.block-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.block-container {
+  flex: 1;
+}
+
+a {
+  font-family: UbuntuRegular;
+  font-size: 18px;
+  text-decoration: none;
+  color: #3a3535;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0; /* Убираем внутренний отступ у списка */
+}
+
+li {
+  margin-right: 420px; /* Добавляем правый отступ между элементами */
+}
+
+a {
+  font-family: UbuntuRegular;
+  font-size: 50px;
+  text-decoration: none;
+  color: #3a3535;
+}
+
